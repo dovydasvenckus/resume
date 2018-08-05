@@ -1,0 +1,194 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+\usepackage[lithuanian]{babel}
+\usepackage[utf8x]{inputenc}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://dovydasvenckus.com/}{\Large Dovydas Venckus}} & Email : \href{mailto:dovydas.venck@gmail.com}{dovydas.venck@gmail.com}\\
+  \href{https://dovydasvenckus.com/}{https://dovydasvenckus.com} & Mobile : +370-67802390
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Vilnius University}{Vilnius, Lithuania}
+      {Bachelor of Software engineering}{2011 -- 2017}
+    \resumeSubheading
+      {Kretinga Jurgis Pabrėža gymnasium}{Kretinga, Lithuania}
+      {School}{1999 -- 2011}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {4Finance}{Vilnius, Lithuania}
+      {Java Software developer}{July 2017 - Now}
+      \resumeItemListStart
+      \resumeItem{Work}
+
+      Working with same technologies as in previous position.
+
+      \resumeItem{Hiring}
+
+      Started to actively participate in hiring processes. It includes
+      reviewing candidate homework and participating in technical interviews.
+
+      \resumeItem{Mentoring}
+
+      Mentoring and helping other new employees. Took initiative to train the first
+      intern in our department.
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {4Finance}{Vilnius, Lithuania}
+      {Junior Java developer}{April 2016 - July 2017}
+      \resumeItemListStart
+      \resumeItem{Work}
+
+      Worked on a wide range of projects, from monoliths to microservices.
+      My work ranged from support tasks to new feature implementation.
+
+      I have mainly worked with Java 8 and current Spring technologies.
+      I have used Groovy and Spock mainly for writing unit and integration tests.
+
+      Also, I have gained some experience in writing acceptance tests using Cucumber.
+
+      Conducting code reviews
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Dekbera}{Vilnius, Lithuania}
+      {Junior Java developer}{October 2014 - April 2016}
+      \resumeItemListStart
+        \resumeItem{Real-time map with Google API}
+
+          Created a new web application using Grails framework.
+          Using Google Maps API I have developed a real-time map of moving vehicles.
+          Also, I have used Google Maps API for historical data visualization.
+
+          \resumeItem{Network devices health check system}
+
+          Created system that collects data from registered devices. Implemented
+          notification sending when device parameters were not in defined ranges.
+
+          \resumeItem{Small web service}
+
+          I also developed a small SOAP web service which used Java, Spring, Hibernate, and Apache CXF technologies.
+          To ensure expected behavior I have covered in unit tests.
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+% \section{Projects}
+%   \resumeSubHeadingListStart
+%     \resumeSubItem{QuantSoftware Toolkit}
+%       {Open source python library for financial data analysis and machine learning for finance.}
+%     \resumeSubItem{Github Visualization}
+%       {Data Visualization of Git Log data using D3 to analyze project trends over time.}
+%     \resumeSubItem{Recommendation System}
+%       {Music and Movie recommender systems using collaborative filtering on public datasets.}
+%     \resumeSubItem{Mac Setup}
+%       {Book that gives step by step instructions on setting up developer environment on Mac OS.}
+%   \resumeSubHeadingListEnd
+
+\section{Programming Skills}
+ \resumeSubHeadingListStart
+   \item{
+     \textbf{Languages}{: Java, Groovy, Python, Ruby}
+     \hfill
+     \textbf{Technologies}{: Spring, JPA, Hibernate, ActiveMQ, Jersey}
+   }
+   \item{
+     \textbf{Testing technologies}{: JUnit, Spock, Cucumber}
+     \hfill
+     \textbf{Front end technologies}{: Aurelia, Knockout.js}
+   }
+   \item{
+     \textbf{Tools}{: Git, Mercurial, Maven, Gradle}
+     \hfill
+     \textbf{Databases}{: PostgreSQL, MySQL}
+   }
+ \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
