@@ -15,20 +15,12 @@ Personal resume
 
 
 ## Build inside docker
-You can build resume PDF inside container
+You can build resume PDF inside docker container.
 
-Build Alpine image with texlive:
+    ./latexdockercmd.sh pdflatex resume.tex
 
-    docker build -t dovydasvenckus/resume .
-
-
-Build inside container:
-
-    docker run --name resume dovydasvenckus/resume
-
-Copy PDF to host machine:
-
-    docker cp resume:/home/resume/resume.pdf .
+This script will pull [alpine-latex](https://hub.docker.com/r/dovydasvenckus/alpine-latex) image.
+And it will compile `resume.tex` inside this container.
 
 ### License
 This resume is based on https://github.com/sb2nov/resume project which is licensed under MIT license.
